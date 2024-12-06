@@ -6,92 +6,7 @@
     <title>World Peas Checkout</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .header {
-            background-color: #ffffff;
-            padding: 15px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .basket-button {
-            background-color: #396b29;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .basket-items {
-            background-color: #f0eee6;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
-        }
-
-        .basket-items img {
-            width: 80px;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .order-summary {
-            background-color: #f0eee6;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .order-summary .total {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .payment-button {
-        background-color: #467c34; /* Match the green color */
-        color: white;
-        padding: 15px 20px; /* Larger padding for better size */
-        border: none;
-        border-radius: 8px; /* Rounded corners */
-        font-size: 16px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-
-    .payment-button svg {
-        margin-left: 10px; /* Spacing for the arrow icon */
-        fill: white; /* Match arrow color */
-        width: 16px;
-        height: 16px;
-    }
-
-    .payment-button:hover {
-        background-color: #396b29; /* Darker green on hover */
-    }
-
-        @media (max-width: 768px) {
-            .basket-items img {
-                width: 60px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -147,9 +62,12 @@
                     <p>Tax: $2.00</p>
                     <p class="total">Total: $33.43</p>
                 </div>
-                <button class="payment-button mt-3">Continue to Payment <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M13 19l-1.414-1.414L17.172 12H4v-2h13.172l-5.586-5.586L13 5l7 7z"/>
-                </svg></button>
+                <button class="payment-button mt-3">
+                    Continue to Payment
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13 19l-1.414-1.414L17.172 12H4v-2h13.172l-5.586-5.586L13 5l7 7z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
