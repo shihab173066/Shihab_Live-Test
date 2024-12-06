@@ -26,18 +26,30 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
-.basket-items {
+.basket-item {
     background-color: #f0eee6;
-    padding: 15px;
     border-radius: 10px;
+    padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.basket-items img {
+.basket-item img {
     width: 80px;
-    height: auto;
+    height: 80px;
     border-radius: 5px;
+    object-fit: cover;
+}
+
+.basket-item h5 {
+    font-weight: bold;
+}
+
+.basket-item .price {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .order-summary {
@@ -53,11 +65,11 @@ h1, h2, h3 {
 }
 
 .payment-button {
-    background-color: #467c34; /* Match the green color */
+    background-color: #467c34;
     color: white;
-    padding: 15px 20px; /* Larger padding for better size */
+    padding: 15px 20px;
     border: none;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     display: flex;
@@ -67,18 +79,19 @@ h1, h2, h3 {
 }
 
 .payment-button svg {
-    margin-left: 10px; /* Spacing for the arrow icon */
-    fill: white; /* Match arrow color */
+    margin-left: 10px;
+    fill: white;
     width: 16px;
     height: 16px;
 }
 
 .payment-button:hover {
-    background-color: #396b29; /* Darker green on hover */
+    background-color: #396b29;
 }
 
 @media (max-width: 768px) {
-    .basket-items img {
+    .basket-item img {
         width: 60px;
+        height: 60px;
     }
 }
