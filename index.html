@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Peas Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .basket-button {
+            background-color: #396b29;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .basket-items {
+            background-color: #f0eee6;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .basket-items img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .order-summary {
+            background-color: #f0eee6;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-summary .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .payment-button {
+        background-color: #467c34; /* Match the green color */
+        color: white;
+        padding: 15px 20px; /* Larger padding for better size */
+        border: none;
+        border-radius: 8px; /* Rounded corners */
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .payment-button svg {
+        margin-left: 10px; /* Spacing for the arrow icon */
+        fill: white; /* Match arrow color */
+        width: 16px;
+        height: 16px;
+    }
+
+    .payment-button:hover {
+        background-color: #396b29; /* Darker green on hover */
+    }
+
+        @media (max-width: 768px) {
+            .basket-items img {
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header container-fluid">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">World Peas</div>
+            <nav>
+                <a href="#" class="mr-3">Home</a>
+                <a href="#" class="mr-3">Shop</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button class="basket-button">Basket</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Basket Items Section -->
+            <div class="col-lg-8">
+                <div class="basket-items d-flex align-items-center mb-3">
+                    <img src="img/Heirloom Tomato.jfif" alt="Heirloom Tomato">
+                    <div class="ml-3">
+                        <h5>Heirloom Tomato</h5>
+                        <p>$5.99 / kg</p>
+                        <p>$5.99</p>
+                    </div>
+                </div>
+                <div class="basket-items d-flex align-items-center mb-3">
+                    <img src="img/Organic Ginger.jpg" alt="Organic Ginger">
+                    <div class="ml-3">
+                        <h5>Organic Ginger</h5>
+                        <p>$12.99 / kg</p>
+                        <p>$6.50</p>
+                    </div>
+                </div>
+                <div class="basket-items d-flex align-items-center mb-3">
+                    <img src="img/Sweet Onion.jfif" alt="Sweet Onion">
+                    <div class="ml-3">
+                        <h5>Sweet Onion</h5>
+                        <p>$2.99 / kg</p>
+                        <p>$14.95</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="col-lg-4">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <p>Subtotal: $27.44</p>
+                    <p>Shipping: $3.99</p>
+                    <p>Tax: $2.00</p>
+                    <p class="total">Total: $33.43</p>
+                </div>
+                <button class="payment-button mt-3">Continue to Payment <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M13 19l-1.414-1.414L17.172 12H4v-2h13.172l-5.586-5.586L13 5l7 7z"/>
+                </svg></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
